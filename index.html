@@ -32,27 +32,20 @@
       <div id="currentDay" class="lead"></div>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+
+<!-- Add Current Local Date/Time -->
       <script src="moment.js"></script>
       <script>
       
-      var currentDayAndTime = moment().format();
+      var currentDayAndTime = moment().locale("LLL");
       var timeDiv = document.getElementById("currentDay");
       timeDiv.textContent = currentDayAndTime;
       
-      // var timeDiv = $(".lead");
-      // timeDiv.textContent = "Test";
-
-      
-      // console.log(currentDayAndTime);
-      // var newDiv = $("<div>");
-      // newDiv.textContent = moment().format();;  
-      
-      //   timeDiv.text("Test");
-        
+  
 
       </script>
 
+<!--Schedule Table (Includes Timeblocks)-->
       <table class="table">
         <thead class="thead-dark">
           <tr>
@@ -65,56 +58,56 @@
         <tbody>
           <tr>
             <th scope="row">7 AM</th>
-            <td><input type="text" id="event-1" placeholder="Enter event here" contenteditable="true"></input></td>
+            <td><input type="text" id="event-1" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
             <td><button id="save_button" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">8 AM</th>
-            <td contenteditable="true"></td>>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-2" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button2" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">9 AM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-3" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button3" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">10 AM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-4" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button4" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">11 AM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-5" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button5" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">12 PM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-6" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button6" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">1 PM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-7" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button7" type="button" class="btn btn-success">Save</button></td>
             
           </tr>
           <tr>
             <th scope="row">2 PM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-8" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button8" type="button" class="btn btn-success">Save</button></td>
         
           </tr>
           <tr>
             <th scope="row">3 PM</th>
-            <td contenteditable="true"></td>
-            <td><button type="button" class="btn btn-success">Save</button></td>
+            <td><input type="text" id="event-9" placeholder="Enter event here" contenteditable="true" maxlength="23"></input></td>
+            <td><button id="save_button9" type="button" class="btn btn-success">Save</button></td>
 
           </tr>
         </tbody>
@@ -122,6 +115,8 @@
       
       
     </div>
+    
+<!--Scripts-->    
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
